@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
   form.addEventListener('submit', (event) => {
     event.preventDefault();
     const fields = {
-      name: form.querySelector('#full-name'),
+      name: form.querySelector('#name'),
       email: form.querySelector('#email'),
       company: form.querySelector('#company'),
       description: form.querySelector('#description'),
