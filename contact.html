@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Whimsy Insights | Request a Quote</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+      <div class="container topbar">
+        <div class="logo">Whimsy Insights</div>
+        <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+        <nav class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a class="active" href="contact.html">Contact</a>
+        </nav>
+      </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <h1>Request a Quote</h1>
+        <p>Tell us about your objectives and we’ll craft a proposal tailored to your timeline and leadership needs. Should confidentiality be a top priority for your inquiry, please submit a general contact request. We will promptly reach out through a secure, private channel to discuss your needs.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div>
+          <form id="contact-form" novalidate>
+            <div>
+              <label for="full-name">Name *</label>
+              <input type="text" id="full-name" name="full-name" required aria-required="true">
+              <div class="error-message" aria-live="polite"></div>
+            </div>
+
+            <div>
+              <label for="email">Email *</label>
+              <input type="email" id="email" name="email" required aria-required="true">
+              <div class="error-message" aria-live="polite"></div>
+            </div>
+
+            <div>
+              <label for="company">Company / Organization</label>
+              <input type="text" id="company" name="company">
+              <div class="error-message" aria-live="polite"></div>
+            </div>
+
+            <div>
+              <label for="description">Describe your needs *</label>
+              <textarea id="description" name="description" required aria-required="true" placeholder="What decision are you supporting? What outcomes matter?"></textarea>
+              <div class="error-message" aria-live="polite"></div>
+            </div>
+
+            <button class="btn" type="submit">Submit Request</button>
+            <div id="form-success" aria-live="polite"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <div><strong>Whimsy Insights</strong></div>
+      <div>Independent research studio for confident decisions.</div>
+      <small>© 2024 Whimsy Insights. All rights reserved.</small>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
